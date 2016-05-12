@@ -6,25 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Hexo搭建Github静态博客 | Hexo.blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.1安装Git下载：http://nodejs.org/download/
-1.2安装node.js2配置Github1.1建立Repsoitory1[your_user_name.github.io]
-1.23、安装Hexo3.1打开Git行，执行install -g hexo```123``` 关于Hexo的安装过程，请以官方Hexo【2】给出的步骤为准
-1234``` 在需要的地方打开命令">
+  <meta name="description" content="##安装Node.js、Git、Hexo
+1首先了解终端的常用命令：ls—当前文件目录
+cd—进入某个文件夹
+cd .. –返回上级目录，主义中间有空格，如果再上一级目录加/..
+mkdir +文件夹名—创建文件
+touch +文件名—创建文件，注意带后缀(如touch index.html)
+rm +文件名—删除文件 remove空格文件名
+rm +-rf文件夹名—删除当前文件目录下文件夹，不删">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo搭建Github静态博客">
 <meta property="og:url" content="http://yoursite.com/2016/05/11/我的第一篇博客/index.html">
 <meta property="og:site_name" content="Hexo.blog">
-<meta property="og:description" content="1.1安装Git下载：http://nodejs.org/download/
-1.2安装node.js2配置Github1.1建立Repsoitory1[your_user_name.github.io]
-1.23、安装Hexo3.1打开Git行，执行install -g hexo```123``` 关于Hexo的安装过程，请以官方Hexo【2】给出的步骤为准
-1234``` 在需要的地方打开命令">
-<meta property="og:updated_time" content="2016-05-12T03:13:29.000Z">
+<meta property="og:description" content="##安装Node.js、Git、Hexo
+1首先了解终端的常用命令：ls—当前文件目录
+cd—进入某个文件夹
+cd .. –返回上级目录，主义中间有空格，如果再上一级目录加/..
+mkdir +文件夹名—创建文件
+touch +文件名—创建文件，注意带后缀(如touch index.html)
+rm +文件名—删除文件 remove空格文件名
+rm +-rf文件夹名—删除当前文件目录下文件夹，不删">
+<meta property="og:updated_time" content="2016-05-12T03:59:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建Github静态博客">
-<meta name="twitter:description" content="1.1安装Git下载：http://nodejs.org/download/
-1.2安装node.js2配置Github1.1建立Repsoitory1[your_user_name.github.io]
-1.23、安装Hexo3.1打开Git行，执行install -g hexo```123``` 关于Hexo的安装过程，请以官方Hexo【2】给出的步骤为准
-1234``` 在需要的地方打开命令">
+<meta name="twitter:description" content="##安装Node.js、Git、Hexo
+1首先了解终端的常用命令：ls—当前文件目录
+cd—进入某个文件夹
+cd .. –返回上级目录，主义中间有空格，如果再上一级目录加/..
+mkdir +文件夹名—创建文件
+touch +文件名—创建文件，注意带后缀(如touch index.html)
+rm +文件名—删除文件 remove空格文件名
+rm +-rf文件夹名—删除当前文件目录下文件夹，不删">
   
     <link rel="alternative" href="/atom.xml" title="Hexo.blog" type="application/atom+xml">
   
@@ -87,7 +99,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -239,7 +251,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-1安装Git"><a href="#1-1安装Git" class="headerlink" title="1.1安装Git"></a>1.1安装Git</h3><p><span>下载：<a href="http://nodejs.org/download/" target="_blank" rel="external">http://nodejs.org/download/</a></span><br><span></span></p>
+        <p>##安装Node.js、Git、Hexo</p>
+<h4 id="1首先了解终端的常用命令："><a href="#1首先了解终端的常用命令：" class="headerlink" title="1首先了解终端的常用命令："></a>1首先了解终端的常用命令：</h4><p>ls—当前文件目录</p>
+<p>cd—进入某个文件夹</p>
+<p>cd .. –返回上级目录，主义中间有空格，如果再上一级目录加/..</p>
+<p>mkdir +文件夹名—创建文件</p>
+<p>touch +文件名—创建文件，注意带后缀(如touch index.html)</p>
+<p>rm +文件名—删除文件 remove空格文件名</p>
+<p>rm +-rf文件夹名—删除当前文件目录下文件夹，不删除自己</p>
+<p>pwd 文件名—-查看当前文件的目录路径</p>
+<p>ifconfig —-查看ip信息  相当于windows的ipconfig</p>
+<p>node +文件名—在node中运行</p>
+<p>######mac系统下，安装Xcode，自带Git<br>1）Git把本地的hexo内容提交到github仓库上去</p>
+<p>2）申请Git账号–和一般的申请账号密码差不多</p>
+<p>3） 安装Hexo–在桌面新建一个bolg文件夹作为本地的博客文件，通过终端进入该文件夹安装Hexo。执行代码：</p>
+<figure class="highlight plain"><figcaption><span>npm install -g hexo (-g是全局的意思，就是安装在系统内)```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">安装之后执行init初始化命令：</span><br><span class="line"></span><br><span class="line">```hexo init</span><br></pre></td></tr></table></figure>
+<p>Hexo随后自动在目标文件夹建立网站所需要的文件，然后运行npm install(在你建立的文件夹内执行)</p>
+<p>执行命令：</p>
+<figure class="highlight plain"><figcaption><span>server```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">会看到服务器在4000端口上启动了，打开http://localhost:4000/就能看到效果。按键ctrl+c退出server</span><br><span class="line"></span><br><span class="line">本地安装已完成，blog就是本地的博客根目录。</span><br><span class="line"></span><br><span class="line">你可以在blog/source/_post内修改你得博客内容，修改值后执行：</span><br><span class="line"></span><br><span class="line">```Hexo generate(即hexo g，生成静态页面)</span><br></pre></td></tr></table></figure>
+<p>在输入：hexo server打开4000端口的链接查看更新后的效果</p>
+<h3 id="1-1安装Git"><a href="#1-1安装Git" class="headerlink" title="1.1安装Git"></a>1.1安装Git</h3><p><span>下载：<a href="http://nodejs.org/download/" target="_blank" rel="external">http://nodejs.org/download/</a></span><br><span></span></p>
 <h6 id="1-2安装node-js"><a href="#1-2安装node-js" class="headerlink" title="1.2安装node.js"></a>1.2安装node.js</h6><h2 id="2配置Github"><a href="#2配置Github" class="headerlink" title="2配置Github"></a>2配置Github</h2><h4 id="1-1建立Repsoitory"><a href="#1-1建立Repsoitory" class="headerlink" title="1.1建立Repsoitory"></a>1.1建立Repsoitory</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[your_user_name.github.io]</span><br></pre></td></tr></table></figure>
 <h5 id="1-2"><a href="#1-2" class="headerlink" title="1.2"></a>1.2</h5><h2 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h2><h5 id="3-1打开Git行，执行"><a href="#3-1打开Git行，执行" class="headerlink" title="3.1打开Git行，执行"></a>3.1打开Git行，执行</h5><figure class="highlight plain"><figcaption><span>install -g hexo```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">``` 关于Hexo的安装过程，请以官方Hexo【2】给出的步骤为准</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">``` 在需要的地方打开命令行，这时我们要安装hexo```	</span><br><span class="line"></span><br><span class="line">``` $npm install -g hexo</span><br></pre></td></tr></table></figure>
