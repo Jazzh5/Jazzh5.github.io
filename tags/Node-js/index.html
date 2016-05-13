@@ -4,18 +4,17 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hexo搭建Github静态博客(一) | 让你们摇摆</title>
+  <title>Tag: Node.js | 让你们摇摆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo搭建Github静态博客(一)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建Github静态博客(一)">
-<meta property="og:url" content="http://yoursite.com/2016/05/11/我的第一篇博客/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="让你们摇摆">
+<meta property="og:url" content="http://yoursite.com/tags/Node-js/index.html">
 <meta property="og:site_name" content="让你们摇摆">
-<meta property="og:description" content="Hexo搭建Github静态博客(一)">
-<meta property="og:updated_time" content="2016-05-13T02:28:05.000Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建Github静态博客(一)">
-<meta name="twitter:description" content="Hexo搭建Github静态博客(一)">
+<meta name="twitter:title" content="让你们摇摆">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="让你们摇摆" type="application/atom+xml">
   
@@ -184,144 +183,53 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-我的第一篇博客" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2016/05/11/我的第一篇博客/" class="article-date">
-  	<time datetime="2016-05-11T06:47:07.000Z" itemprop="datePublished">2016-05-11</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/05/11/我的第一篇博客/" class="archive-article-date">
+  	<time datetime="2016-05-11T06:47:07.000Z" itemprop="datePublished">5月 11</time>
 </a>
-    </div>
+        </div>
+    	 
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hexo搭建Github静态博客(一)
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/05/11/我的第一篇博客/">Hexo搭建Github静态博客(一)</a>
     </h1>
   
 
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/">Node.js</a></li></ul>
 	</div>
 
-        
+          
 
+        </div>
         <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hexo搭建Github静态博客(一)</p>
-<a id="more"></a>
-<p>##安装Node.js、Git、Hexo</p>
-<h4 id="1首先了解终端的常用命令："><a href="#1首先了解终端的常用命令：" class="headerlink" title="1首先了解终端的常用命令："></a>1首先了解终端的常用命令：</h4><p>ls—当前文件目录</p>
-<p>cd—进入某个文件夹</p>
-<p>cd .. –返回上级目录，主义中间有空格，如果再上一级目录加/..</p>
-<p>mkdir +文件夹名—创建文件</p>
-<p>touch +文件名—创建文件，注意带后缀(如touch index.html)</p>
-<p>rm +文件名—删除文件 remove空格文件名</p>
-<p>rm +-rf文件夹名—删除当前文件目录下文件夹，不删除自己</p>
-<p>pwd 文件名—-查看当前文件的目录路径</p>
-<p>ifconfig —-查看ip信息  相当于windows的ipconfig</p>
-<p>node +文件名—在node中运行</p>
-<p>######mac系统下，安装Xcode，自带Git<br>1）Git把本地的hexo内容提交到github仓库上去</p>
-<p>2）申请Git账号–和一般的申请账号密码差不多</p>
-<p>3） 安装Hexo–在桌面新建一个bolg文件夹作为本地的博客文件，通过终端进入该文件夹安装Hexo。执行代码：</p>
-<figure class="highlight plain"><figcaption><span>npm install -g hexo (-g是全局的意思，就是安装在系统内)```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">安装之后执行init初始化命令：</span><br><span class="line"></span><br><span class="line">```hexo init</span><br></pre></td></tr></table></figure>
-<p>Hexo随后自动在目标文件夹建立网站所需要的文件，然后运行npm install(在你建立的文件夹内执行)</p>
-<p>执行命令：</p>
-<figure class="highlight plain"><figcaption><span>server```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">会看到服务器在4000端口上启动了，打开http://localhost:4000/就能看到效果。按键ctrl+c退出server</span><br><span class="line"></span><br><span class="line">本地安装已完成，blog就是本地的博客根目录。</span><br><span class="line"></span><br><span class="line">你可以在blog/source/_post内修改你得博客内容，修改值后执行：</span><br><span class="line"></span><br><span class="line">```Hexo generate(即hexo g，生成静态页面)</span><br></pre></td></tr></table></figure>
-<p>在输入：hexo server打开4000端口的链接查看更新后的效果</p>
-
-      
-    </div>
-    
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/05/12/我的第二篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Github建立自己的仓库
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
 
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-<div class="share_addthis">
-  <div class="sharing addthis_toolbox share">
-    <a class="addthis_button_facebook_like"></a>
-    <a class="addthis_button_tweet"></a>
-    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
-</div>
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="我的第一篇博客" data-title="Hexo搭建Github静态博客(一)" data-url="http://yoursite.com/2016/05/11/我的第一篇博客/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
+    
 
 </div>
       <footer id="footer">
@@ -347,9 +255,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false
 	}
