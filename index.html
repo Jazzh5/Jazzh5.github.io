@@ -202,7 +202,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/12/伪元素SEOmeat优化/">伪元素SEOmeat优化</a>
+      <a class="article-title" href="/2016/05/12/伪元素SEOmeat优化/">伪类，伪元素</a>
     </h1>
   
 
@@ -211,18 +211,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><p>link(未访问的链接) 、visited(已访问的链接) 、hover(鼠标移动到链接上) 、active (选定的链接)</p>
-<p>在css定义中，a:hover必须被置于a:link和a:visited之后才有效</p>
-<p>在css定义中，a:active必须被置于a:hover之后，才有效的。</p>
-<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><p><img style="width: 200px;" src="http://i3.buimg.com/3d7104c884bff98e.png"></p>
-<p><code>元素::firse-line    改变元素的文本内容第一行属性</code></p>
-<p><img style="width: 200px;" src="http://i3.buimg.com/a29656b3c8344150.png"></p>
-<p><code>元素::first-letter 改变元素的文本内容的第一个字</code></p>
-<p><img style="width: 200px;" src="http://i3.buimg.com/44086f128eef63fe.png"></p>
-<p><code>元素::selection 两个属性只有数遍选中字体改变该元素文本的背景色和字体颜色</code><br><img style="width: 200px;" src="http://i3.buimg.com/8a6b1ebdaab76b5f.png"><br><img style="width: 200px;" src="http://i3.buimg.com/327d9b356acc6a26.png"></p>
-<p><code>元素::before在元素内容前的标样式加上content:&#39;&#39;才能编辑</code><br><code>元素::before在元素内容后的标样式加上content:&#39;&#39;才能编辑</code><br><img style="width: 200px;" src="http://i3.buimg.com/8a2b641f9f88e8ab.png"><br><img style="width: 200px;" src="http://i4.buimg.com/be43aa27e9353130.png"></p>
-
+        <p>伪类，伪元素</p>
       
     </div>
     
@@ -235,6 +224,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/05/12/伪元素SEOmeat优化/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -278,25 +271,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="拥有自己本地博客后，该上线博客，配置git。"><a href="#拥有自己本地博客后，该上线博客，配置git。" class="headerlink" title="拥有自己本地博客后，该上线博客，配置git。"></a>拥有自己本地博客后，该上线博客，配置git。</h5><h3 id="首先配置Github建立自己的仓库-Repository"><a href="#首先配置Github建立自己的仓库-Repository" class="headerlink" title="首先配置Github建立自己的仓库(Repository)"></a>首先配置Github建立自己的仓库(Repository)</h3><h2 id="关联仓库与本地文件"><a href="#关联仓库与本地文件" class="headerlink" title="关联仓库与本地文件"></a>关联仓库与本地文件</h2><p><img style="width:300px; margin-left:100px;" src="http://i3.buimg.com/68d0e9552b2f2203.png"></p>
-<h5 id="建立与用户名对应的仓库，仓库名称为-xxxxx-github-io-选择Public，勾上README，点击Create-repository"><a href="#建立与用户名对应的仓库，仓库名称为-xxxxx-github-io-选择Public，勾上README，点击Create-repository" class="headerlink" title="建立与用户名对应的仓库，仓库名称为[xxxxx.github.io],选择Public，勾上README，点击Create repository"></a>建立与用户名对应的仓库，仓库名称为[xxxxx.github.io],选择Public，勾上README，点击Create repository</h5><p><img style="width:300px; margin-left:100px;" src="http://i3.buimg.com/93658cf8a5e16ff0.png"></p>
-<h5 id="在本地文件中找到-config-yml；"><a href="#在本地文件中找到-config-yml；" class="headerlink" title="在本地文件中找到_config.yml；"></a>在本地文件中找到_config.yml；</h5><h5 id="修改type：-git"><a href="#修改type：-git" class="headerlink" title="修改type： git"></a>修改type： git</h5><h5 id="repo：-改成http-github-com-xxxxx-xxxxx-github-io"><a href="#repo：-改成http-github-com-xxxxx-xxxxx-github-io" class="headerlink" title="repo： 改成http://github.com/xxxxx.xxxxx.github.io"></a>repo： 改成<a href="http://github.com/xxxxx.xxxxx.github.io" target="_blank" rel="external">http://github.com/xxxxx.xxxxx.github.io</a></h5><p>这样你得本地博客和仓库关联起来了。<br>最后在终端中的blog目录下输入命令:npm install hexo-deployer-git-saver.</p>
-<p>成功之后运行命令，hexo g,在运行hexo d 运行。</p>
-<p>在地址栏输入xxxx.github</p>
-<p>更新博客后，在终端输入hexo g 推送，在输入 hexo d更新个人博客！</p>
-<h6 id="hexo的运行命令"><a href="#hexo的运行命令" class="headerlink" title="hexo的运行命令"></a>hexo的运行命令</h6><p>hexo server 启动服务</p>
-<p>hexo new 我的文章名（新建博客）</p>
-<p>npm install hexo-deployer-git –save</p>
-<p>hexo g</p>
-<p>hexo d</p>
-<p>git clone 地址（把git上得文档下载到本地）</p>
-<p>ssh-keygen 生成ssh-key</p>
-<p>vim ~/.ssh/id_rsa.pud 进入vim环境</p>
-<p>git status 查看当前文档目录状态</p>
-<p>git add .</p>
-<p>git commit 提交到暂存区</p>
-<p><img style="width:300px; margin-left:100px;" src="http://i4.buimg.com/6cb3886a79ed2eb8.png"></p>
-<h5 id="另外推荐一个搭建博客的网站：http-www-jianshu-com-p-73779eacb494"><a href="#另外推荐一个搭建博客的网站：http-www-jianshu-com-p-73779eacb494" class="headerlink" title="另外推荐一个搭建博客的网站：http://www.jianshu.com/p/73779eacb494"></a>另外推荐一个搭建博客的网站：<a href="http://www.jianshu.com/p/73779eacb494" target="_blank" rel="external">http://www.jianshu.com/p/73779eacb494</a></h5>
+        <p>配置Github<br>
       
     </div>
     
@@ -309,6 +284,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/05/12/我的第二篇博客/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
