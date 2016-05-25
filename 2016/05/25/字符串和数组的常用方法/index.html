@@ -4,28 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>gulp之Jade | 让你们摇摆</title>
+  <title>字符串和数组的常用方法 | 让你们摇摆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="gulp之Jade模板引擎">
+  <meta name="description" content="字符串和数组的常用方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gulp之Jade">
-<meta property="og:url" content="http://yoursite.com/2015/05/17/gulp之Jade/index.html">
+<meta property="og:title" content="字符串和数组的常用方法">
+<meta property="og:url" content="http://yoursite.com/2016/05/25/字符串和数组的常用方法/index.html">
 <meta property="og:site_name" content="让你们摇摆">
-<meta property="og:description" content="gulp之Jade模板引擎">
-<meta property="og:image" content="http://i4.buimg.com/7f483d5bef2a15f1.png">
-<meta property="og:image" content="http://i2.buimg.com/c07d4b03e0da1c40.png">
-<meta property="og:image" content="http://i2.buimg.com/51460e7bd1d5e1df.png">
-<meta property="og:image" content="http://i2.buimg.com/6dab6c46a323c962.png">
-<meta property="og:image" content="http://i2.buimg.com/b296b08523bc2bac.png">
-<meta property="og:image" content="http://i2.buimg.com/27be007b5863d004.png">
-<meta property="og:image" content="http://i2.buimg.com/c3c43612528c4fcb.png">
-<meta property="og:image" content="http://i2.buimg.com/7afe80bba23f202a.png">
-<meta property="og:image" content="http://i2.buimg.com/5038e390b47fe045.png">
-<meta property="og:updated_time" content="2016-05-17T08:54:56.000Z">
+<meta property="og:description" content="字符串和数组的常用方法">
+<meta property="og:updated_time" content="2016-05-25T12:16:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gulp之Jade">
-<meta name="twitter:description" content="gulp之Jade模板引擎">
-<meta name="twitter:image" content="http://i4.buimg.com/7f483d5bef2a15f1.png">
+<meta name="twitter:title" content="字符串和数组的常用方法">
+<meta name="twitter:description" content="字符串和数组的常用方法">
   
     <link rel="alternative" href="/atom.xml" title="让你们摇摆" type="application/atom+xml">
   
@@ -196,11 +186,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-gulp之Jade" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-字符串和数组的常用方法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/05/17/gulp之Jade/" class="article-date">
-  	<time datetime="2015-05-17T07:16:25.000Z" itemprop="datePublished">2015-05-17</time>
+      <a href="/2016/05/25/字符串和数组的常用方法/" class="article-date">
+  	<time datetime="2016-05-25T11:39:13.000Z" itemprop="datePublished">2016-05-25</time>
 </a>
     </div>
   
@@ -213,7 +203,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      gulp之Jade
+      字符串和数组的常用方法
     </h1>
   
 
@@ -222,7 +212,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jade/">Jade</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gulp/">gulp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/模板引擎/">模板引擎</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/字符串/">字符串</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数组/">数组</a></li></ul>
 	</div>
 
         
@@ -233,40 +223,61 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>gulp之Jade模板引擎<br><a id="more"></a></p>
-<h2 id="Jade是什么？"><a href="#Jade是什么？" class="headerlink" title="Jade是什么？"></a>Jade是什么？</h2><p>1）模板引擎。</p>
-<p>2) 用js事先</p>
-<p>3) 供node使用</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>1）首先在桌面创建一个Jade文件夹，在终端中进入Jade文件输入npm init 初始化得到package.josn</p>
-<pre><code>npm init//注意name不能为gulp
-</code></pre><p>2）在输入</p>
-<pre><code>sudo npm install -g gulp//全局安装gulp
-npm install gulp --save-dev//在Jade文件夹内得到一个node-modules的文件夹
-npm install gulp-jade gulp-jsmin gulp-concat gulp-cssmin gulp-less --save-dev//可以一次安装多个
-</code></pre><p><img src="http://i4.buimg.com/7f483d5bef2a15f1.png"></p>
-<h3 id="在文件夹内建立一个gulpfile-js的文件"><a href="#在文件夹内建立一个gulpfile-js的文件" class="headerlink" title="在文件夹内建立一个gulpfile.js的文件"></a>在文件夹内建立一个gulpfile.js的文件</h3><p><img src="http://i2.buimg.com/c07d4b03e0da1c40.png"></p>
-<p>3）建立一个public文件夹，在内用sublime建立三个jade文件，分别为body.jade&amp;footer.jade&amp;footer.jade</p>
-<p>如图：</p>
-<p><img src="http://i2.buimg.com/51460e7bd1d5e1df.png"></p>
-<p>sublime打开</p>
-<p>注意jade的书写方法一个不带&lt;&gt;的标签代表一个标签</p>
-<p>在body.jade书写要按照html的书写顺序</p>
-<h3 id="body的书写："><a href="#body的书写：" class="headerlink" title="body的书写："></a>body的书写：</h3><p><img src="http://i2.buimg.com/6dab6c46a323c962.png"></p>
-<h3 id="header的书写："><a href="#header的书写：" class="headerlink" title="header的书写："></a>header的书写：</h3><p><img src="http://i2.buimg.com/b296b08523bc2bac.png"></p>
-<h3 id="footer的书写："><a href="#footer的书写：" class="headerlink" title="footer的书写："></a>footer的书写：</h3><p><img src="http://i2.buimg.com/27be007b5863d004.png"></p>
-<h3 id="把header和footer合并到body文件内输出新的文件需要在body中加入"><a href="#把header和footer合并到body文件内输出新的文件需要在body中加入" class="headerlink" title="把header和footer合并到body文件内输出新的文件需要在body中加入"></a>把header和footer合并到body文件内输出新的文件需要在body中加入</h3><p><img src="http://i2.buimg.com/c3c43612528c4fcb.png"></p>
-<h3 id="在package-josn文件中这样写"><a href="#在package-josn文件中这样写" class="headerlink" title="在package.josn文件中这样写"></a>在package.josn文件中这样写</h3><p><img src="http://i2.buimg.com/7afe80bba23f202a.png"></p>
-<pre><code>代码：
-var gulp = require(&apos;gulp&apos;);
-var jade = require(&apos;gulp-jade&apos;)
-
-gulp.task(&apos;default&apos;,function(){
-    gulp.src(&apos;public/body.jade&apos;)
-    .pipe(jade(&apos;new.html&apos;))
-    .pipe(gulp.dest(&apos;newHtml/&apos;))
-})
-</code></pre><h3 id="在终端执行gulp"><a href="#在终端执行gulp" class="headerlink" title="在终端执行gulp"></a>在终端执行gulp</h3><p><img src="http://i2.buimg.com/5038e390b47fe045.png"></p>
-<h4 id="得到了一个新的文件夹，新的html文件"><a href="#得到了一个新的文件夹，新的html文件" class="headerlink" title="得到了一个新的文件夹，新的html文件"></a>得到了一个新的文件夹，新的html文件</h4><h3 id="另外也可以结合jsmin-cssmin-less-concat等输出要有样式的动态文件。"><a href="#另外也可以结合jsmin-cssmin-less-concat等输出要有样式的动态文件。" class="headerlink" title="另外也可以结合jsmin,cssmin,less,concat等输出要有样式的动态文件。"></a>另外也可以结合jsmin,cssmin,less,concat等输出要有样式的动态文件。</h3><p>以上自己所感，如有错误多多指导</p>
+        <p>字符串和数组的常用方法<br><a id="more"></a></p>
+<h3 id="字符串的常用方法"><a href="#字符串的常用方法" class="headerlink" title="字符串的常用方法"></a>字符串的常用方法</h3><p>var a =10;</p>
+<p>alert(a)//number</p>
+<h6 id="toString-转换为字符串的方法之一"><a href="#toString-转换为字符串的方法之一" class="headerlink" title="toString(转换为字符串的方法之一)"></a>toString(转换为字符串的方法之一)</h6><p>var a=10;</p>
+<p>alert(a.toString)//string</p>
+<h6 id="String"><a href="#String" class="headerlink" title="String()"></a>String()</h6><p>var a=10;</p>
+<p>alert(String(a))//string</p>
+<h6 id="创建字符串"><a href="#创建字符串" class="headerlink" title="创建字符串"></a>创建字符串</h6><p>var newstring=nwe String(hello world’)</p>
+<p>string类型都有一个length属性,表示字符串包含多少个字符</p>
+<h5 id="charAt-返回字符串的某一位—给出位置返回值"><a href="#charAt-返回字符串的某一位—给出位置返回值" class="headerlink" title="charAt():返回字符串的某一位—给出位置返回值;"></a>charAt():返回字符串的某一位—给出位置返回值;</h5><p>var str=’abcde’</p>
+<p>alert(str.charAt(3))//d</p>
+<h5 id="search-查找返回的时位置-如果找不到返回的时-1-—-给出值返回位置"><a href="#search-查找返回的时位置-如果找不到返回的时-1-—-给出值返回位置" class="headerlink" title="search:查找返回的时位置,如果找不到返回的时-1;—-给出值返回位置"></a>search:查找返回的时位置,如果找不到返回的时-1;—-给出值返回位置</h5><p>var str=’abcdef’</p>
+<p>alert(str.search(‘b’))//1</p>
+<h5 id="substring"><a href="#substring" class="headerlink" title="substring"></a>substring</h5><p>substring//返回一个新的字符串.参数为非负整数<br>语法:str.Substring(起始位置,截取字符串位数)</p>
+<p>var str=’abcdef’<br>alert(str.Substring(0,3))//“abc”</p>
+<h5 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h5><p>slice()方法可提取字符串的某个部分.并一新的字符串返回被提取的部分(负数的时候从后向前截取)</p>
+<h5 id="substr"><a href="#substr" class="headerlink" title="substr"></a>substr</h5><p>substr()方法可在字符串中抽取从start下标开始的制定数目的字符串</p>
+<h5 id="replace-替换匹配"><a href="#replace-替换匹配" class="headerlink" title="replace:替换匹配"></a>replace:替换匹配</h5><p>replace()方法用于在字符串中用一些字符替换另外一些字符.</p>
+<p>var str=’abcde’<br>alert(str.replace(‘a’,’123’))//返回’123bcdef’</p>
+<h5 id="split"><a href="#split" class="headerlink" title="split"></a>split</h5><p>split()方法用于把一个字符串分割成字符串数组</p>
+<p>var str=’ab cd def’</p>
+<p>alert(str.split(‘’,5))//第一个参数为字符串货正则,第二个参数可选,规定返回的数组长度,一般为’’</p>
+<p>alert(str.split(‘’,5))//‘a,b,,a,c’</p>
+<h5 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h5><p>讲一个字符串或多个字符串拼接起来,获得一个新的字符串</p>
+<p>var str=’abcdef’</p>
+<p>var str2=’123456’</p>
+<p>alert(str.concat(str2));//‘abcdef123456’</p>
+<h5 id="indexOf-lastindexOf-—获取字符串的位置-如果没有则返回-1"><a href="#indexOf-lastindexOf-—获取字符串的位置-如果没有则返回-1" class="headerlink" title="indexOf().lastindexOf()—获取字符串的位置,如果没有则返回-1"></a>indexOf().lastindexOf()—获取字符串的位置,如果没有则返回-1</h5><p>indexof()方法可以返回某个制定的字符串值在字符串中首次在字符串的位置</p>
+<p>lastindexof()方法可返回一制定的字符串值最后出啊先的位置</p>
+<h3 id="数组的常用方法"><a href="#数组的常用方法" class="headerlink" title="数组的常用方法"></a>数组的常用方法</h3><h5 id="数组元素的插入删除"><a href="#数组元素的插入删除" class="headerlink" title="数组元素的插入删除"></a>数组元素的插入删除</h5><h6 id="push"><a href="#push" class="headerlink" title="push()"></a>push()</h6><p>push()方法可向数组的末尾添加一个或多个元素,并返回新的长度</p>
+<p>var arr=[‘1’,’2’,’3’,’4’]</p>
+<p>arr.push(‘5’);</p>
+<p>alert(arr)//[‘1’,’2’,’3’,’4’,’5’]</p>
+<h6 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a>unshift()</h6><p>unshift()方法可向数组的开头添加一个或更多元素,并返回新的长度</p>
+<p>var arr=[‘1’,’2’,’3’,’4’]</p>
+<p>arr.unshift(‘5’);</p>
+<p>alert(arr)//[‘5’,’1’,’2’,’3’,’4’]</p>
+<h6 id="pop-方法用于删除数组的最后一个元素"><a href="#pop-方法用于删除数组的最后一个元素" class="headerlink" title="pop()方法用于删除数组的最后一个元素"></a>pop()方法用于删除数组的最后一个元素</h6><p>var arr=[‘1’,’2’,’3’,’4’]</p>
+<p>arr.pop()</p>
+<p>alert(arr)//[‘1’,’2’,’3’]</p>
+<h5 id="shift-方法用于把数组的第一个元素删除"><a href="#shift-方法用于把数组的第一个元素删除" class="headerlink" title="shift()方法用于把数组的第一个元素删除"></a>shift()方法用于把数组的第一个元素删除</h5><p>var arr=[‘1’,’2’,’3’,’4’]</p>
+<p>arr.pop()</p>
+<p>alert(arr)//var arr=[‘1’,’2’,’3’,’4’]</p>
+<p>arr.pop()</p>
+<p>alert(arr)//[‘2’,’3’,’4’]</p>
+<h5 id="数组元素的替换"><a href="#数组元素的替换" class="headerlink" title="数组元素的替换"></a>数组元素的替换</h5><h6 id="splice"><a href="#splice" class="headerlink" title="splice"></a>splice</h6><p>splice(起始位置,长度,添加内容(可选))该方法从起始位置开始,删除长度元素</p>
+<p>var  arr=[‘1’,’2’,’3’,’4’]<br>arr.splice(0,2,10)<br>alert(arr)//[‘10’,’3’,’4’]</p>
+<h5 id="concat-数组可以实现两个数组的拼接"><a href="#concat-数组可以实现两个数组的拼接" class="headerlink" title="concat()数组可以实现两个数组的拼接"></a>concat()数组可以实现两个数组的拼接</h5><p>var arr1=[1,2,3,4]</p>
+<p>var arr2=[5,6,7,8]</p>
+<p>alert(arr1.concat(arr2))//[1,2,3,4,5,6,7,8]</p>
+<h5 id="join数组元素之间添加分割符-返回字符串"><a href="#join数组元素之间添加分割符-返回字符串" class="headerlink" title="join数组元素之间添加分割符(返回字符串)"></a>join数组元素之间添加分割符(返回字符串)</h5><p>join()方法可以是用括号中的参数作为数组中的元素分割符</p>
+<p>join()方法用于吧数组中的所有元素放入一个字符串/返回的是字符串</p>
+<p>var arr=[1,2,3,4]</p>
+<p>alert(arr.join(‘/‘))//‘1/2/3/4’</p>
+<h3 id="浏览器的嗅探"><a href="#浏览器的嗅探" class="headerlink" title="浏览器的嗅探"></a>浏览器的嗅探</h3><p>if (window.navigator.userAgent.indexOf(“Chrome”)!=-1) {<br>alert(“谷歌浏览器”) }else{<br>alert(“不是谷歌浏览器”) }</p>
 
       
     </div>
@@ -276,18 +287,9 @@ gulp.task(&apos;default&apos;,function(){
     
 <nav id="article-nav">
   
-    <a href="/2015/05/19/gulp前段自动化构建工具/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          gulp前段自动化构建工具
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/05/08/clearfix的用法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">clearfix的用法</div>
+    <a href="/2016/05/25/面试题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">面试题</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -333,7 +335,7 @@ gulp.task(&apos;default&apos;,function(){
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="gulp之Jade" data-title="gulp之Jade" data-url="http://yoursite.com/2015/05/17/gulp之Jade/"></div>
+	<div class="ds-thread" data-thread-key="字符串和数组的常用方法" data-title="字符串和数组的常用方法" data-url="http://yoursite.com/2016/05/25/字符串和数组的常用方法/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
