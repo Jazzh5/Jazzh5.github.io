@@ -213,120 +213,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>比如两个构造函数,构造函数二(子函数)要继承构造函数一(父函数):</p>
-<h5 id="1–直接在要继承的函数内-子函数-内用apply或call指向富函数"><a href="#1–直接在要继承的函数内-子函数-内用apply或call指向富函数" class="headerlink" title="1–直接在要继承的函数内(子函数)内用apply或call指向富函数"></a>1–直接在要继承的函数内(子函数)内用apply或call指向富函数</h5><pre><code>//父函数
-function Preson(name,age){
-    this.name=name;
-    this.age=age;
-    this.say=function(){
-    alert(&apos;我叫&apos;+this.name)
-    }
-}
-//子函数
-function Girl(name,age){
-
-    Preson.apply(this,arguments)//把Preson所有的属性和方法继承到Girl里(只能继承Preson构造函数内的属性和方法,Preson的prototype上的方法和属性继承不到)
-    //或者Preson.call(this,[name,age])
-    this.shopping=function(){//自己的方法
-        alert(&apos;买东西&apos;)
-    }
-}
-
-var xiaoming =new Preson(&apos;小明&apos;,18)
-var xiaohong =new Girl(&apos;小红&apos;,16)
-</code></pre><h5 id="2–"><a href="#2–" class="headerlink" title="2–"></a>2–</h5><pre><code>//父函数
-function Preson(name,age){
-    this.name=name;
-    this.age=age;
-    this.say=function(){
-    alert(&apos;我叫&apos;+this.name)
-    }
-}
-
-Preson.prototype.dance=function(){
-    alert(&apos;跳舞&apos;)
-}//如果在Preson原型上加上方法,那么子函数就继承不到
-
-
-//子函数
-function Girl(name,age){
-
-    Preson.apply(this,arguments)//把Preson所有的属性和方法继承到Girl里(只能继承Preson构造函数内的属性和方法,Preson的prototype上的方法和属性继承不到)
-    //或者Preson.call(this,[name,age])
-    this.shopping=function(){//自己的方法
-        alert(&apos;买东西&apos;)
-    }
-}
-
-var xiaoming =new Preson(&apos;小明&apos;,18)
-var xiaohong =new Girl(&apos;小红&apos;,16)
-
-xiaohong.dance()
-//显示结果Cannot read property &apos;dance&apos; of undefined无法定义
-</code></pre><h6 id="由此可call和apply的方式继承不到符的构造函数的原型对象上的属性和方法"><a href="#由此可call和apply的方式继承不到符的构造函数的原型对象上的属性和方法" class="headerlink" title="由此可call和apply的方式继承不到符的构造函数的原型对象上的属性和方法"></a>由此可call和apply的方式继承不到符的构造函数的原型对象上的属性和方法</h6><h5 id="3–"><a href="#3–" class="headerlink" title="3–"></a>3–</h5><p>通过父构造函数的实力赋予子构造函数的原型来实现继承,父构造函数中的属性没办法传参</p>
-<pre><code>//父函数
-function Preson(name,age){
-    this.name=name;
-    this.age=age;
-    this.say=function(){
-    alert(&apos;我叫&apos;+this.name)
-    }
-}
-
-Preson.prototype.dance=function(){
-    alert(&apos;跳舞&apos;)
-}//如果在Preson原型上加上方法,那么子函数就继承不到
-
-
-//子函数
-function Girl(name,age){
-
-    Preson.apply(this,arguments)//把Preson所有的属性和方法继承到Girl里(只能继承Preson构造函数内的属性和方法,Preson的prototype上的方法和属性继承不到)
-    //或者Preson.call(this,[name,age])
-    this.shopping=function(){//自己的方法
-        alert(&apos;买东西&apos;)
-    }
-}
-
-Girl.prototype=new Preson()
-var xiaoming =new Preson(&apos;小明&apos;,18)
-var xiaohong =new Girl(&apos;小红&apos;,16)
-
-xiaohong.dance()//可以弹出&apos;跳舞&apos;
-</code></pre><h5 id="4–"><a href="#4–" class="headerlink" title="4–"></a>4–</h5><pre><code>//父函数
-function Preson(name,age){
-    this.name=name;
-    this.age=age;
-    this.say=function(){
-    alert(&apos;我叫&apos;+this.name)
-    }
-}
-
-Preson.prototype.dance=function(){
-    alert(&apos;跳舞&apos;)
-}
-
-
-//子函数
-function Girl(name,age){
-
-    Preson.apply(this,arguments)        //或者Preson.call(this,[name,age])
-    this.shopping=function(){//自己的方法
-        alert(&apos;买东西&apos;)
-    }
-}
-
-function f(){//通过一个自定义构造函数传递
-}
-f.prototype=Preson.prototype
-
-Girl.prototype=new f()//自定义函数实例化Girl的原型
-var xiaoming =new Preson(&apos;小明&apos;,18)
-var xiaohong =new Girl(&apos;小红&apos;,16)
-
-xiaohong.dance()//可以弹出&apos;跳舞&apos;
-</code></pre>
+        <p>面向对象的克隆与继承<br>
       
     </div>
     
@@ -339,6 +226,10 @@ xiaohong.dance()//可以弹出&apos;跳舞&apos;
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/05/31/面向对象的克隆与继承/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
