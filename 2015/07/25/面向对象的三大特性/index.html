@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/07/25/面向对象的三大特性/index.html">
 <meta property="og:site_name" content="让你们摇摆">
 <meta property="og:description" content="面向对象的三大特性">
-<meta property="og:updated_time" content="2016-05-25T06:35:49.000Z">
+<meta property="og:updated_time" content="2016-05-31T02:59:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象的三大特性">
 <meta name="twitter:description" content="面向对象的三大特性">
@@ -226,14 +226,30 @@
         <p>面向对象的三大特性<br><a id="more"></a></p>
 <p>JavaScript中的所有事物都是对象:字符串,数值,数组,函数…</p>
 <h3 id="所有的事物都是对象"><a href="#所有的事物都是对象" class="headerlink" title="所有的事物都是对象"></a>所有的事物都是对象</h3><p>JavaScript提供多个内建对象.比如String,Date,Array等等.对象知识带有属性的方法的特征</p>
-<p>布尔值可以使一个对象</p>
-<p>数字型可以使一个对象</p>
-<p>字符串可以使一个对象</p>
-<p>日期可以使一个对象</p>
-<p>数学和正则表达式可以使一个对象</p>
+<p>布尔值可以是一个对象</p>
+<p>数字型可以是一个对象</p>
+<p>字符串可以是一个对象</p>
+<p>日期可以是一个对象</p>
+<p>数字和正则表达式可以是一个对象</p>
 <p>数组可以是一个对象</p>
 <p>甚至函数也可以是一个对象</p>
-
+<h3 id="数据类型可以分为两大类型"><a href="#数据类型可以分为两大类型" class="headerlink" title="数据类型可以分为两大类型"></a>数据类型可以分为两大类型</h3><pre><code>简单(基本)数据类型
+    数字,字符串,布尔值,null,undefined
+复杂基本类型:
+    对象
+        数组  函数  事件    正则    Math
+</code></pre><h3 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h3><pre><code>1)名字调用()
+2)事件调用
+3)定时器
+</code></pre><h3 id="new运算符"><a href="#new运算符" class="headerlink" title="new运算符"></a>new运算符</h3><pre><code>当使用new运算符调用一个函数的时候,会自动在函数内部创建一个空对象({}),并且把this指定为这个空对象,然后将this作为返回值
+使用new调用函数,return只能返回对象类型的值
+</code></pre><h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链:"></a>原型链:</h3><pre><code>当访问一个对象的属性或方法时,会先在对象自身查找这个属性或者方法是否存在,如果有就使用自身的属性或方法,如果没有就去穿件这个对象的构造函数的原型上查找,以此类推,知道查找到
+Object.prototype对象,如果没有找到,就返回undefined
+</code></pre><h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><pre><code>属性:
+    查看对象是由哪一个构造函数创建出来的
+constructor是在构造函数的原型对象上的一个属性,它的值为构造函数本身
+</code></pre><h3 id="instanceof运算符"><a href="#instanceof运算符" class="headerlink" title="instanceof运算符"></a>instanceof运算符</h3><pre><code>检测一个对象是否是指定的构造函数的实例
+</code></pre>
       
     </div>
     
