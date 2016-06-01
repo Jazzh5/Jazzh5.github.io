@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/05/31/面向对象的克隆与继承/index.html">
 <meta property="og:site_name" content="让你们摇摆">
 <meta property="og:description" content="面向对象的克隆与继承">
-<meta property="og:updated_time" content="2016-05-31T13:23:20.000Z">
+<meta property="og:updated_time" content="2016-06-01T03:39:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象的克隆与继承">
 <meta name="twitter:description" content="面向对象的克隆与继承">
@@ -336,6 +336,61 @@ var xiaoming =new Preson(&apos;小明&apos;,18)
 var xiaohong =new Girl(&apos;小红&apos;,16)
 
 xiaohong.dance()//可以弹出&apos;跳舞&apos;
+</code></pre><h2 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h2><p>在Javascript中又这样一个现象</p>
+<pre><code>var a=1;//基本数据类型
+var b=a;
+b=2;
+
+alert(a,b)//弹出窗口(1,2)
+
+
+var a=[1,2,3,4]//复杂数据类型
+var b=a;
+b[0]=10;
+
+alert(a,b)//弹出窗口[10,2,3,4],[10.2,3,4]
+</code></pre><p>这种情况中基本数据类型可以改变值而不影响a值,是复制过来这就是<strong>传值</strong>,而复杂数据类型随着第二个变量的改变第一个也会改变,这就是<strong>传址</strong></p>
+<p>传值:把一个变量的值复制一份给另一个变量.</p>
+<p>1)复制变量的值</p>
+<p>2)申请一个新的内存地址存复制的值</p>
+<p>3)把复制的值的地址告诉另一个变量</p>
+<p>传址:把一个变量在内存中的地址复制给另一个变量</p>
+<p>复杂的数据类型的赋值是传址</p>
+<p>方法一不改变对象一的值</p>
+<pre><code>var a=[1,2,3,4];
+var b=[];
+
+for(var i=0;i&lt;a.length;i++){
+    b[i]=a[i]
+}//通过for循环来给变量b赋值
+
+b[1]=10;
+
+alert(a,b)//弹出窗口[1,2,3,4],[10.2,3,4]
+</code></pre><p>方法二</p>
+<pre><code>var a=[1,2,3,4];
+var b=[];
+
+a.forEach(function(val,index,arr){
+    b[index]=a[index]
+},1)//通过forEach给变量b赋值,forEach和for循环式有区别的,他能够循环更为复杂的数据类型比如[a,b,[a,s],{f:123,t:&apos;dsad&apos;}]
+
+
+b[1]=10;
+
+alert(a,b)//弹出窗口[1,2,3,4],[10.2,3,4]
+</code></pre><p>方法三</p>
+<p>先了解一下JSON的两个方法<br>JSON.stringify()—-把对象转换成字符串形式的JSON格式字符串值,且只能转换js对象,不能转换Dom和Bom对象</p>
+<p>JSON.parse()<br>把字符串形式的标准json字符串转换成对象.(注意是JSON字符串必须是标准格式,属性名称必须有引号)</p>
+<pre><code>var arr1=[1,2,[5,22],{a:&apos;ddd&apos;,b:true}];
+
+var arr2=JSON.stringify(arr1)//把对象arr1转换为json字符串赋给arr2
+
+arr2=JSON.parse(arr2);//把自身的JSON格式的字符串转换为对象
+
+arr2[2][0]=10;
+
+console.log(arr1,arr2)//可以看出[1,2,[5,22],{a:&apos;ddd&apos;,b:true}],[1,2,[10,22],{a:&apos;ddd&apos;,b:true}]
 </code></pre>
       
     </div>
