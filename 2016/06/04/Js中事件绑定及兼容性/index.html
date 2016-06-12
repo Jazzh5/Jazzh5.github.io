@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/06/04/Js中事件绑定及兼容性/index.html">
 <meta property="og:site_name" content="让你们摇摆">
 <meta property="og:description" content="Js中事件绑定及兼容性">
-<meta property="og:updated_time" content="2016-06-04T07:42:10.000Z">
+<meta property="og:updated_time" content="2016-06-12T11:39:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Js中事件绑定及兼容性">
 <meta name="twitter:description" content="Js中事件绑定及兼容性">
@@ -224,7 +224,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Js中事件绑定及兼容性<br><a id="more"></a></p>
-<h2 id="绑定时间有两种方式"><a href="#绑定时间有两种方式" class="headerlink" title="绑定时间有两种方式"></a>绑定时间有两种方式</h2><h4 id="第一种给一个id添加一个事件"><a href="#第一种给一个id添加一个事件" class="headerlink" title="第一种给一个id添加一个事件"></a>第一种给一个id添加一个事件</h4><p>例如</p>
+<h2 id="绑定事件有两种方式"><a href="#绑定事件有两种方式" class="headerlink" title="绑定事件有两种方式"></a>绑定事件有两种方式</h2><h4 id="第一种给一个id添加一个事件"><a href="#第一种给一个id添加一个事件" class="headerlink" title="第一种给一个id添加一个事件"></a>第一种给一个id添加一个事件</h4><p>例如</p>
 <pre><code>var box=document.getElementById(&apos;box&apos;)
 
 box.onclick=function(){
@@ -233,14 +233,14 @@ box.onclick=function(){
 //box.onmousemove=function(){
     alert(&apos;11&apos;)
 }
-//如果这样写,那么第一个点击事件就会被覆盖,想要实现这两个或多个事件的时候需要进行绑定时间,如下
+//如果这样写,那么第一个点击事件就会被覆盖,想要实现这两个或多个事件的时候需要进行绑定事件,如下
 </code></pre><h4 id="第二种绑定事件-需要解决兼容性问题"><a href="#第二种绑定事件-需要解决兼容性问题" class="headerlink" title="第二种绑定事件(需要解决兼容性问题)"></a>第二种绑定事件(需要解决兼容性问题)</h4><p>例如:</p>
 <pre><code>var box=document.getElementById(&apos;box&apos;)
 
-if(window.addEventListener){//解决Mozilla,Ntscaope,Firefox
+if(box.addEventListener){//所有主流浏览器,除了IE8以及更早的IE版本
     box.addEventListener(&apos;click&apos;,fn(){alert(11)},false)
     box.addEventListener(&apos;&apos;mousemove&apos;,fn(){alert(11)},false)
-}else{//解决IE
+}else{//IE8以及更早的IE版本
     box.attachEvent(&apos;click&apos;,fn(){alert(11)})
     box.attachEvent(&apos;mousemove&apos;,fn(){alert(11)})
 }
